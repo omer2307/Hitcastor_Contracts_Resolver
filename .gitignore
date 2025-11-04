@@ -1,0 +1,27 @@
+# Foundry / Solidity
+out/
+cache/
+broadcast/
+lib/
+
+# Node scripts (if used)
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Coverage / reports
+coverage/
+reports/
