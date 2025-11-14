@@ -18,7 +18,7 @@ contract Deploy is Script {
         console.log("Account balance:", vm.addr(deployerPrivateKey).balance);
         
         // Deploy Resolver with factory address and 1-day dispute window
-        address factoryAddress = 0x5FbDB2315678afecb367f032d93F642f64180aa3; // From previous deployment
+        address factoryAddress = 0x23057BF06D395e8f3Af646216a095F1788DE78A9; // MarketFactory on BSC Testnet
         uint256 disputeWindow = 24 * 60 * 60; // 1 day in seconds
         Resolver resolver = new Resolver(factoryAddress, disputeWindow);
         
