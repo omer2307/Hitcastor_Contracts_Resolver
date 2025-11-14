@@ -7,4 +7,13 @@ optimizer_runs = 200
 via_ir = true
 solc_version = "0.8.26"
 
+# RPC settings for deployment
+[rpc_endpoints]
+bsc = "https://bsc-dataseed.binance.org/"
+bsc_testnet = "${BSC_RPC_URL}"
+
+[etherscan]
+bsc = { key = "${BSCSCAN_API_KEY}" }
+bsc_testnet = { key = "${BSCSCAN_API_KEY}" }
+
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
